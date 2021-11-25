@@ -1,0 +1,97 @@
+
+
+******************************** [ commit & push]****************************
+git commit -m "msg"
+git push 
+git push -f
+git push -f origin target_branch _ //push by force from stage to repo
+git push -u .. ___________________ //pull then push 
+git restore --stage  file.text ___ //restore file from stage area to locally unStaged unTracked
+git restore --stage * ____________ //restore all from stage area to locally unStaged unTracked
+git clean -n _____________________ //delete whole dir if u wanna excipte some file u could use [git add file.text] then clean the rest
+
+
+*********************************[remove last commit]***************************
+gir log _____________________________ //list of all commits 
+git reset --hard HEAD~1 _____________ //delete the last commit its will del any chandes were in deleted commit
+git reset --soft HEAD~1 _____________ //delete the last commit but will keep the changed in Local but will del in remote 
+git reset HEAD~1 ____________________ //delete the last commit but will keep the changed in Local but will del in remote 
+git reset --hard commit_hash_code ___ //delete specified commit by its hash-code also if were any commit above of it will be delted
+git reset --amend -m "new_rename_msg" //rename last commit
+git reset --amend ___________________ //add the edidted files into last commit [in final type ":wq"]
+git cherry-pick commit_hash_code ____ //copy commit to another branch -switch to the target branch then cherry it
+git log --stat ______________________ //show commits contains
+git push origin branch_name -f ___ //update repo
+
+
+git relog                      //show loge of all operasions 
+git checkout reflog_hash_code  //undo spacific oprasion then creat branch to hold it in when u just creat it will save into
+git revert commit_hash_code __ //revers changes to original of this commit  [:wq]
+git deff commit_hash another_commit_shash // show difference between two commits
+
+
+
+********************************[new branch & change]****************************
+git remote -v  ____________________ //show origins
+git remote update
+git checkout --track origin/<BRANCH-NAME>
+git branch    _____________________ //show all branchs
+git branch new_branch_name ________ //add new branch
+git chechout branch-name __________ //switching to branch_name
+git branch -b name_the_new_branch _ //add new branch also switch to it
+gir branch -m new_branch_name______ //reanme current branch
+git branch -d branch_name _________ //save_deleting branch_name but must fully merged or non edidted
+gir branch -D branch_name _________ //force_deleting branch althoght if it edidted without pushed or merg
+git merge branch_name _____________ //merging branch_name into master but befor it u have to switch master
+
+
+*******************************[upload project into repo]**************************
+
+git init __________________________________________________ //initializing into new local project
+git add . _________________________________________________ // add all
+git commit -m "bla bla" ___________________________________ //msg
+git remote add origin git@github.com:<username>/<reponam> _ //add remote repo to new proj
+git push origin main or master ____________________________ //pushing
+git push -u origin main or master _________________________ //pull first then push
+
+git remote set-url origin https://github.com/Mohammed-Saeed55/RunningTracking.git
+git push --set-upstream origin development
+**git remote add service-center-app 'https://github.com/DeveloperAsela/service-centerapp.git'
+
+
+
+***********************************[stash hunger]***********************************
+git stash ____________________________ //save whole dir into stash-hunger
+git stash save "stash_index_name"_____ //save whole dir into stash-hunger with naming it
+git stash list _______________________ //show all the stash-hunger list 
+git stash show stash@{index or name} _ //show specified stashed what its contained of
+git stash pop ________________________ //restore & move the file at head of stashed-hunger at index[0]
+git stash pop stash@{index or name} __ //restore & move specified stashed-hunger index
+git stash pop apply __________________ //take acopy of the file at head of stashed-hunger at index[0]and restore it but its still in hunger
+git stash clear ______________________ //delete and fully clear stash-hunger without restore
+git stash drop stash@{index or name} _ //delete specified stashed from list
+
+
+
+***********************************[virgin tages]***********************************
+git tag _____________________________ //show whole tags
+git tag tag_virgin_name _____________ //creat new tag
+git tag push origin tage_name _______ //push to the tag
+
+
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Mohammed-Saeed55/RunnerTracking.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/Mohammed-Saeed55/RunnerTracking.git
+git branch -M main
+git push -u origin main
+
+Monotype Corsiva
