@@ -65,7 +65,7 @@ git branch _______________________________________ //show all branches
 git branch -a ____________________________________ //show all branches status
 git branch new_branch_name _______________________ //add new branch
 git checkout branch-name _________________________ //switching to branch_name
-git checkout -b name_the_new_branch ________________ //add new branch also switch to it
+git checkout -b name_the_new_branch ______________ //add new branch also switch to it
 git checkout -b temporary-branch _________________ //add new temporary branch also switch to it
 git branch -m new_branch_name_____________________ //rename current branch locally u have to push then
 git push origin :old_branch_name new_branch_name _ //renaming branch in remote
