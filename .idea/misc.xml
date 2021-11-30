@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/button_sucess_background.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/error.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/error_background.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/ic__statistic.xml" value="0.1109375" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/ic_baseline_run_circle_24.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/ic_close.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/ic_settings.xml" value="0.24871794871794872" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/drawable/sucess_background.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/activity_custom_alert_dialog.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_blank.xml" value="0.22509057971014493" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_run.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_setting.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_setting_fragment.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_setup.xml" value="0.264" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_statistics.xml" value="0.1" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/fragment_tracking.xml" value="0.264" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/iem_run.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/item_run.xml" value="0.1" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/layout_error_dailog.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/layout_success_dailog.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/layout/layout_warning_dailog.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/menu/toobar_tracking_menu.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Mr.Mohamed Saeed/Desktop/my projects/MohammedSaeed/RunningTrackerApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2526041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
