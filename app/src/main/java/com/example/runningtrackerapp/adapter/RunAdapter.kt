@@ -53,7 +53,11 @@ class RunAdapter: RecyclerView.Adapter<RunAdapter.RunViewHolder>(){
         val run = differ.currentList[position]
         holder.itemView.apply {
             Glide.with(this).load(run.img).into(run_map_shot)
-            val calender: Calendar = Calendar.getInstance().apply {timeInMillis = run.timestamp}
+
+            val calender: Calendar = Calendar.getInstance().apply {
+                timeInMillis = run.timestamp
+            }
+
             val dateFormat = SimpleDateFormat("dd:MM:yy", Locale.getDefault())
             run_date.text = dateFormat.format(calender.time)
             val avgSpeed: String = "${run.avgSpeedInKMH}-km/h"
