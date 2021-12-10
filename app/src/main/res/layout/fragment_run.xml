@@ -41,14 +41,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_run"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@color/lightGreen"
         app:fabSize="normal"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/holo_red_dark"
+        app:showMotionSpec="@anim/nav_default_pop_enter_anim"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@android:color/black"
+        app:tint="@color/white"
         android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
