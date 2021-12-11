@@ -7,6 +7,8 @@ object Constants {
 
     const val REQUEST_CODE_LOCATION_PERMISSION = 0
 
+    const val CANCEL_TRACKING_DIALOG_TAG = "CancelDialog"
+
     const val TIMER_UPDATE_INTERVAL = 30L
 
     const val LOCATION_UPDATE_INTERVAL = 5000L

@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:text="00:00:00:00"
             android:textSize="40dp"
+            app:fontFamily="serif"
             app:layout_constraintBottom_toTopOf="@+id/btn_start_toggle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
