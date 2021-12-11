@@ -70,9 +70,8 @@ class RunFragment: Fragment(R.layout.fragment_run), EasyPermissions.PermissionCa
 
         bind.fab.setOnClickListener {
             findNavController().navigate(R.id.action_runFragment_to_trackingFragment)
-
-
         }
+
         return bind.root
     }
 
