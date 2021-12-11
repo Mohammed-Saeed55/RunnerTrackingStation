@@ -2,21 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="©Created By ℗Mohammed Saeed™"
+        android:textColor="@color/colorNeutral"
+        android:textSize="15sp"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/welcome_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="Welcome!\nPlease enter your name and weight."
         android:textAlignment="center"
+        android:textColor="@color/colorError"
         android:textSize="20sp"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/name_layout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_layout"
@@ -26,7 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_input"
@@ -34,7 +51,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Your Name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -44,7 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/name_layout"
-        app:layout_constraintTop_toBottomOf="@+id/name_layout">
+        app:layout_constraintTop_toBottomOf="@+id/name_layout"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/weight_input"
@@ -52,7 +71,8 @@
             android:layout_height="wrap_content"
             android:hint="Your Weight"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,32 +82,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="kg"
+        android:textColor="@color/colorError"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/weight_layout"
         app:layout_constraintLeft_toRightOf="@id/weight_layout"
-        app:layout_constraintTop_toTopOf="@+id/weight_layout" />
+        app:layout_constraintTop_toTopOf="@+id/weight_layout"
+        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/white"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        >
 
         <TextView
             android:id="@+id/continue_btn"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Continue"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorError"
             android:textSize="24sp"
+            app:fontFamily="@font/berkshire_swash"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

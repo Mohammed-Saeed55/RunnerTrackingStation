@@ -19,6 +19,7 @@ import com.example.runningtrackerapp.ui.viewmodels.MainViewModel
 import com.example.runningtrackerapp.utils.Constants.ACTION_PAUSE_SERVICE
 import com.example.runningtrackerapp.utils.Constants.ACTION_START_OR_RESUME_SERVICE
 import com.example.runningtrackerapp.utils.Constants.ACTION_STOP_SERVICE
+import com.example.runningtrackerapp.utils.Constants.CANCEL_TRACKING_DIALOG_TAG
 import com.example.runningtrackerapp.utils.Constants.MAP_ZOOM
 import com.example.runningtrackerapp.utils.Constants.POLYLINE_COLOR
 import com.example.runningtrackerapp.utils.Constants.POLYLINE_WIDTH
@@ -60,6 +61,13 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
                               savedInstanceState: Bundle?): View {
         _bind = FragmentTrackingBinding.inflate(inflater, container, false)
 
+        // handle cancelDialog screen rotation
+        if (savedInstanceState != null) {
+            val cancelTrackingDialog =
+                parentFragmentManager.findFragmentByTag(CANCEL_TRACKING_DIALOG_TAG) as CancelTrackingDialog?
+            cancelTrackingDialog?.setYesListener{ stopRun()}
+        }
+
         bind.map.onCreate(savedInstanceState)
         subscribeToObservers()
         setHasOptionsMenu(true)
@@ -77,6 +85,7 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
 
         return bind.root
     }
+
 
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -98,6 +107,8 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
     }
 
 
+
+/*
     private fun cancelTrackingDialog(){
         val dialogBuilder = AlertDialog.Builder(requireContext(), R.style.AlertDialogTheme)
         val bindWarningDialog = LayoutWarningDailogBinding.inflate(LayoutInflater.from(requireContext()))
@@ -115,13 +126,23 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
         bindWarningDialog.buttonYes.setOnClickListener {alertDialog.dismiss(); stopRun()}
         alertDialog.show()
     }
+*/
 
 
 
-    private fun stopRun(){
+    private fun cancelTrackingDialog(){
+        CancelTrackingDialog().apply { setYesListener { stopRun() }
+        }.show(parentFragmentManager, CANCEL_TRACKING_DIALOG_TAG)
+    }
+
+
+
+    private fun stopRun() {
         sendCommandToService(ACTION_STOP_SERVICE)
         findNavController().navigate(R.id.action_trackingFragment_to_runFragment)
+        bind.timerView.text = "00:00:00:00"
     }
+
 
 
     private fun subscribeToObservers(){
@@ -136,11 +157,14 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
         })
 
         TrackingServices.timeRunInMillis.observe(viewLifecycleOwner, Observer {
-            currentTimeMillis = it
-            val formattedTime = TrackingUtility.formattedStopWatchTimer(currentTimeMillis, true)
-            bind.timerView.text = formattedTime
+            if (isTracking){
+                currentTimeMillis = it
+                val formattedTime = TrackingUtility.formattedStopWatchTimer(currentTimeMillis, true)
+                bind.timerView.text = formattedTime
+            }
         })
     }
+
 
 
     private fun toggleRun() =
@@ -151,12 +175,13 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
             sendCommandToService(ACTION_START_OR_RESUME_SERVICE)
 
 
+
     private fun updateTracking(isTracking: Boolean){
         this.isTracking = isTracking
-        if (!isTracking){
+        if (!isTracking && currentTimeMillis > 0L){
             bind.btnStartToggle.text = "Continue"
             bind.btnFinish.visibility = View.VISIBLE
-        }else{
+        }else if(isTracking){
             bind.btnStartToggle.text = "Pause"
             bind.btnFinish.visibility = View.GONE
             menu?.getItem(0)?.isVisible = true
@@ -164,10 +189,12 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
     }
 
 
+
     private fun moveCamera(){
         if (pathPoints.isNotEmpty() && pathPoints.last().isNotEmpty())
             map?.animateCamera(CameraUpdateFactory.newLatLngZoom(pathPoints.last().last(), MAP_ZOOM))
     }
+
 
 
     private fun addAllPolyLines(){
@@ -179,6 +206,7 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
             map?.addPolyline(polylineOptions)
         }
     }
+
 
 
     private fun addLatestPolyLine(){
@@ -193,6 +221,8 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
             map?.addPolyline(polyLineOptions)
         }
     }
+
+
 
     private fun zoomingToWholeTrack(){
         val bounds: LatLngBounds.Builder = LatLngBounds.Builder()
@@ -210,6 +240,7 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
             )
         )
     }
+
 
 
     private fun endRunAndSaveToDataBase(){
@@ -234,11 +265,14 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking) {
     }
 
 
+
     private fun sendCommandToService(action: String) =
         Intent(requireContext(), TrackingServices::class.java).also {
             it.action = action
             requireContext().startService(it)
         }
+
+
 
 
     override fun onResume() {

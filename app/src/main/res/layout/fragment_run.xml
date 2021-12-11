@@ -8,23 +8,29 @@
 
     <Spinner
         android:id="@+id/spinner_filter"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/filter_options"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/filter_by"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sort by:"
-        android:textSize="16sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        app:drawableTint="#AA0303"
+        app:fontFamily="cursive"
         app:layout_constraintBottom_toBottomOf="@+id/spinner_filter"
         app:layout_constraintEnd_toStartOf="@+id/spinner_filter"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/runs_recyclerView"
@@ -34,22 +40,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_filter" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_filter"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_run"
-        app:backgroundTint="@color/lightGreen"
+        app:backgroundTint="@color/colorError"
         app:fabSize="normal"
-        app:rippleColor="@android:color/holo_red_dark"
+        app:rippleColor="@color/colorWarning"
         app:showMotionSpec="@anim/nav_default_pop_enter_anim"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white"
-        android:contentDescription="TODO" />
+        android:contentDescription="TODO"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
