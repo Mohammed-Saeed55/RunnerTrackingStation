@@ -13,4 +13,10 @@
         </item>
     </style>
 
+    <style
+        name="Theme.Transparent"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
 </resources>
