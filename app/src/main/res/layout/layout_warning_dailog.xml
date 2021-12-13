@@ -70,7 +70,8 @@
         app:layout_constraintBottom_toBottomOf="@id/layout_dialog"
         app:layout_constraintEnd_toStartOf="@id/button_yes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layout_dialog" />
+        app:layout_constraintTop_toBottomOf="@id/layout_dialog"
+        />
 
     <Button
         android:id="@+id/button_yes"
@@ -86,6 +87,7 @@
         app:layout_constraintBottom_toBottomOf="@id/layout_dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_no"
-        app:layout_constraintTop_toBottomOf="@id/layout_dialog" />
+        app:layout_constraintTop_toBottomOf="@id/layout_dialog"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
