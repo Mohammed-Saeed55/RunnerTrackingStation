@@ -2,10 +2,10 @@
 
  - ###  :memo:`Objective Functionality App Summary!`
 > This app provides user every track he has making by all details of it  also with map screen-shot of the track and save them all individualize with all details, Then resolve to collect all these tracks to make calculations to provide user about the statistics of his  tracks he has made, in final display a diagram chart of the :arrow_down:  <br/>
->   [ `<span style="color:red">Total average speed</span>`,
- `<span style="color:red">Total distance</span>`,
- `<span style="color:red">Total calories burned</span>`,
- and `<span style="color:red">total time</span>` ]
+>   [ <span style="color:red">`Total average speed`</span>,
+ <span style="color:red">`Total distance`</span>,
+ <span style="color:red">`Total calories burned`</span>,
+ and <span style="color:red">`total time`</span> ]
  of whole tracks .  <br/>
  
 > - **Here is the  details of uses track extract  :**  <br/>
@@ -104,15 +104,5 @@
 
 ## *App Screen-Shots* :
 
- 1. ![1](/screen-shots/1.jpg)
- 2. ![2](/screen-shots/2.jpg)
- 3. ![3](/screen-shots/3.jpg)
- 4. ![4](/screen-shots/4.jpg)
- 5. ![5](/screen-shots/5.jpg)
- 6. ![6](/screen-shots/6.jpg)
- 7. ![7](/screen-shots/7.jpg)
- 8. ![8](/screen-shots/8.jpg)
- 9. ![9](/screen-shots/9.jpg)
- 10. ![10](/screen-shots/10.jpg)
- 11. ![11](/screen-shots/11.jpg)
+ 1. ![1](/screen-shots/1.jpg) 2. ![2](/screen-shots/2.jpg) 3. ![3](/screen-shots/3.jpg) 4. ![4](/screen-shots/4.jpg) 5. ![5](/screen-shots/5.jpg) 6. ![6](/screen-shots/6.jpg) 7. ![7](/screen-shots/7.jpg) 8. ![8](/screen-shots/8.jpg) 9. ![9](/screen-shots/9.jpg) 10. ![10](/screen-shots/10.jpg) 11. ![11](/screen-shots/11.jpg)
  
