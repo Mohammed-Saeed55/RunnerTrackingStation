@@ -14,6 +14,7 @@ import com.example.runningtrackerapp.databinding.ActivityMainBinding
 import com.example.runningtrackerapp.utils.Constants
 import com.example.runningtrackerapp.utils.Constants.ACTION_SHOW_TRACKING_FRAGMENT
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_success_dailog.view.*
 import javax.inject.Inject
 
@@ -35,7 +36,8 @@ class MainActivity : AppCompatActivity() {
         val nameFromSetting: String? = sharedPref.getString(Constants.KEY_NAME, "")
 
         setSupportActionBar(bind.toolbar)
-        bind.toolbarTitle.text = "Let's Start Again: $nameFromSetting"
+        if (nameFromSetting!!.isEmpty()) bind.toolbarTitle.text = "Runner Tracking Station"
+        else bind.toolbarTitle.text = "Let's Start Again: $nameFromSetting"
 
         trackingFragmentNavigate(intent)
 

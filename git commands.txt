@@ -73,14 +73,14 @@ git push remote -u new_branch_name _______________ //renaming branch in both rem
 git branch -d branch_name ________________________ //save_deleting branch_name at stage-area but must fully merged or non edited 
 git branch -D branch_name ________________________ //force_deleting branch stage-area although if it edited without pushed or merge
 git push origin --delete branch_name _____________ //delete remote branch
-git remote prune origin __________________________ //udate the local repo synchronously with remote
+git remote prune origin __________________________ //update the local repo synchronously with remote
 
 
 
 ********************************[Merging & Rebase]****************************
 git merge branch_name _____________ //merging branch_name into master but before it u have to switch master
 git merge branch_name main ________ //merging branch_name into master by one line, its not merge commits it just made a refrence to it 
-git rebase main ___________________ //merge to onto main and keep branches commits with new tags while merge commit 
+git rebase main ___________________ //merge onto main and keep branches commits with new tags while merge commit 
 git rebase -i main ________________ //merge to main with cleared commit history
 git log ___________________________ //show whole commits
 

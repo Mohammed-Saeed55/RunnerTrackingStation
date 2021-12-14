@@ -10,6 +10,7 @@ import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.example.runningtrackerapp.R
 import com.example.runningtrackerapp.databinding.FragmentSetupBinding
+import com.example.runningtrackerapp.utils.Constants
 import com.example.runningtrackerapp.utils.Constants.KEY_FIRST_TIME_TOGGLE
 import com.example.runningtrackerapp.utils.Constants.KEY_NAME
 import com.example.runningtrackerapp.utils.Constants.KEY_WEIGHT
@@ -33,16 +34,11 @@ class SetupFragment: Fragment(R.layout.fragment_setup) {
     private val bind get() = _bind
 
 
-/*
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        _bind = FragmentSetupBinding.inflate(layoutInflater) }
-*/
-
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         _bind = FragmentSetupBinding.inflate(inflater, container, false)
+        val nameFromSetting: String? = sharedPref.getString(Constants.KEY_NAME, "")
 
 
         if (!isFirstTimeUserOpen){
@@ -85,7 +81,7 @@ class SetupFragment: Fragment(R.layout.fragment_setup) {
                 .putBoolean(KEY_FIRST_TIME_TOGGLE, false)
                 .apply()
 
-            val toolbarText: String = "Lets go, $name"
+            val toolbarText: String = "Let's go, $name"
             requireActivity().toolbar_title.text = toolbarText
 
             true
