@@ -10,6 +10,7 @@ import com.example.runningtrackerapp.R
 import com.example.runningtrackerapp.databinding.FragmentSettingBinding
 import com.example.runningtrackerapp.utils.Constants.KEY_NAME
 import com.example.runningtrackerapp.utils.Constants.KEY_WEIGHT
+import com.example.runningtrackerapp.utils.TrackingUtility.hideKeyboard
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
@@ -35,9 +36,10 @@ class SettingFragment: Fragment(R.layout.fragment_setting) {
 
         bind.btnApplyChanges.setOnClickListener {
             val success: Boolean = applyChangesIntoSharedPref()
-            if (success)
+            if (success) {
+                hideKeyboard()
                 Snackbar.make(bind.root, "Change's Saved", Snackbar.LENGTH_LONG).show()
-            else
+            }            else
                 Snackbar.make(bind.root, " plz fill out all fields behind! ", Snackbar.LENGTH_LONG).show()
         }
 
@@ -64,7 +66,7 @@ class SettingFragment: Fragment(R.layout.fragment_setting) {
             .putString(KEY_NAME, nameFromSetting)
             .putFloat(KEY_WEIGHT, weightFromSetting.toFloat())
             .apply()
-        val toolbarTxtFromSetting: String = "Let's go: $nameFromSetting"
+        val toolbarTxtFromSetting = "Let's go: $nameFromSetting"
         requireActivity().toolbar_title.text = toolbarTxtFromSetting
 
         return true
