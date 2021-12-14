@@ -16,7 +16,7 @@
 > :arrow_right: Lap map screen-shot.  <br/>
 > <br/> 
 >
-> ::***Hhint!*** : **App constructed with interactive text Tool-Bar and animated splash-screen.**
+> ::*hint!* : **App constructed with interactive text Tool-Bar and animated splash-screen.**
 
 
 <br/> 
