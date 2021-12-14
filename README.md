@@ -7,15 +7,15 @@
  <span style="color:red">`Total calories burned`</span>,
  and <span style="color:red">`total time`</span> ]
  of whole tracks .  <br/>
- 
+>
 > - **Here is the  details of uses track extract  :**  <br/>
 > :arrow_right: Calculate calories burned.  <br/>
 > :arrow_right: Lap exact time duration.   <br/>
 > :arrow_right: Lap start Time.  <br/>
 > :arrow_right: Calculate Lap average speed.  <br/>
 > :arrow_right: Lap map screen-shot.  <br/>
-><br/> 
->***::hint***: App constructed with interactive text Tool-Bar and animated splash-screen.
+> <br/> 
+> ::*Hint!*: App constructed with interactive text Tool-Bar and animated splash-screen.
 
 
 <br/> 
