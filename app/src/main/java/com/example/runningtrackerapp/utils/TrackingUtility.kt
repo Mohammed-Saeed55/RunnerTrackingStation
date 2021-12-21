@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import com.example.runningtrackerapp.services.PolyLine
 import com.google.android.gms.maps.model.LatLng
 import pub.devrel.easypermissions.EasyPermissions
+import java.util.*
 import java.util.concurrent.TimeUnit
 
 object TrackingUtility {
@@ -73,17 +74,5 @@ object TrackingUtility {
                 "${if (milliSeconds < 10)"0" else ""}$milliSeconds"
     }
 
-    fun Fragment.hideKeyboard() {
-        view?.let { activity?.hideKeyboard(it) }
-    }
-
-    fun Activity.hideKeyboard() {
-        hideKeyboard(currentFocus ?: View(this))
-    }
-
-    fun Context.hideKeyboard(view: View) {
-        val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
-    }
 
 }

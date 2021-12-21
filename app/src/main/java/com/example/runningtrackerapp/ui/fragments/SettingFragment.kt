@@ -10,7 +10,7 @@ import com.example.runningtrackerapp.R
 import com.example.runningtrackerapp.databinding.FragmentSettingBinding
 import com.example.runningtrackerapp.utils.Constants.KEY_NAME
 import com.example.runningtrackerapp.utils.Constants.KEY_WEIGHT
-import com.example.runningtrackerapp.utils.TrackingUtility.hideKeyboard
+import com.example.runningtrackerapp.utils.ITools.hideKeyboard
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*

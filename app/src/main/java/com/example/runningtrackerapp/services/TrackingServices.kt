@@ -233,8 +233,8 @@ class TrackingServices: LifecycleService() {
 
 
     private val locationCallBack = object : LocationCallback() {
-        override fun onLocationResult(result: LocationResult?) {
-            super.onLocationResult(result!!)
+        override fun onLocationResult(result: LocationResult) {
+            super.onLocationResult(result)
             if (isTracking.value!!) {
                 result.locations.let { locations ->
                     for (location in locations) {

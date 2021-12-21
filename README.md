@@ -15,7 +15,8 @@
 > :arrow_right: Calculate Lap average speed.  <br/>
 > :arrow_right: Lap map screen-shot.  <br/>
 > <br/> 
-> ::*Hint!*: App constructed with interactive text Tool-Bar and animated splash-screen.
+>
+> ::*hint!* : **App constructed with interactive text Tool-Bar and animated Splash-Screen.**
 
 
 <br/> 
@@ -111,4 +112,3 @@
 
  <br/>
  <br/>
-
