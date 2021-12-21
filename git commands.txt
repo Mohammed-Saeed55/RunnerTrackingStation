@@ -86,6 +86,17 @@ git log ___________________________ //show whole commits
 
 
 
+Step 1: From your project repository, bring in the changes and test.
+git fetch origin
+git checkout -b v9_AppLang_with_devices origin/v9_AppLang_with_devices
+git merge main
+
+Step 2: Merge the changes and update on GitHub.
+
+git checkout main
+git merge --no-ff v9_AppLang_with_devices
+git push origin main
+
 
 *******************************[upload project into repo]**************************
 
