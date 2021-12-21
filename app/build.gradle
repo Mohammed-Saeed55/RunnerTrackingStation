@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.runningtrackerapp"
-        minSdk 21
+        minSdk 24
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -63,11 +63,11 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
 
     // Room
-    implementation "androidx.room:room-runtime:2.3.0"
-    kapt "androidx.room:room-compiler:2.3.0"
+    implementation "androidx.room:room-runtime:2.4.0"
+    kapt "androidx.room:room-compiler:2.4.0"
 
     // Kotlin Extensions and Coroutines support for Room
-    implementation "androidx.room:room-ktx:2.3.0"
+    implementation "androidx.room:room-ktx:2.4.0"
 
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2-native-mt'
@@ -78,16 +78,16 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
 
     // Navigation Components
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.0-beta02'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.4.0-beta02'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.0-rc01'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.0-rc01'
 
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     kapt 'com.github.bumptech.glide:compiler:4.12.0'
 
     // Google Maps Location Services
-    implementation 'com.google.android.gms:play-services-location:18.0.0'
-    implementation 'com.google.android.gms:play-services-maps:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.1'
 
     // Dagger Hilt
     implementation 'com.google.dagger:hilt-android:2.40.1'
@@ -104,9 +104,9 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 
-    implementation "androidx.navigation:navigation-fragment-ktx:2.4.0-beta02"
-    implementation "androidx.navigation:navigation-ui-ktx:2.4.0-beta02"
-    androidTestImplementation "androidx.navigation:navigation-testing:2.4.0-beta02"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.4.0-rc01"
+    implementation "androidx.navigation:navigation-ui-ktx:2.4.0-rc01"
+    androidTestImplementation "androidx.navigation:navigation-testing:2.4.0-rc01"
     implementation 'android.arch.lifecycle:extensions:1.1.1'
 
 }

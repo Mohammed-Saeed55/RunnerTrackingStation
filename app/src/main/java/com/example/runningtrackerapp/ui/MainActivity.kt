@@ -1,5 +1,7 @@
 package com.example.runningtrackerapp.ui
 
+import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -13,9 +15,11 @@ import com.example.runningtrackerapp.R
 import com.example.runningtrackerapp.databinding.ActivityMainBinding
 import com.example.runningtrackerapp.utils.Constants
 import com.example.runningtrackerapp.utils.Constants.ACTION_SHOW_TRACKING_FRAGMENT
+import com.example.runningtrackerapp.utils.ITools.setAppLocale
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_success_dailog.view.*
+import java.util.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -25,10 +29,10 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var sharedPref: SharedPreferences
 
-
-
+    override fun attachBaseContext(newBase: Context) { super.attachBaseContext(ContextWrapper(newBase.setAppLocale("en"))) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         /*---------------------[Initializing & Rendering]---------------------*/
         bind = ActivityMainBinding.inflate(layoutInflater)

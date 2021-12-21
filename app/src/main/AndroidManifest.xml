@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.runningtrackerapp">
 
@@ -22,7 +23,7 @@
 
         <activity
             android:name=".ui.SplashScreen"
-            android:label="SplashScreen"
+            android:label="Runner Tracking Station"
             android:theme="@style/Theme.Transparent"
             android:exported="true">
 
@@ -35,7 +36,6 @@
 
         <activity
             android:name=".ui.MainActivity"
-            android:label="SplashScreen"
             android:exported="true"
             android:launchMode="singleTask">
         </activity>
