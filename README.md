@@ -16,7 +16,10 @@
 > :arrow_right: Lap map screen-shot.  <br/>
 > <br/> 
 >
+> ::*hint!* : **App Notications using live controls of the active running and shows the running live duration timer.**  <br/> 
+> ::*hint!* : **App Forced Background active-on,App never closed until user press finish the active run if there.** <br/> 
 > ::*hint!* : **App constructed with interactive text Tool-Bar and animated Splash-Screen.**
+
 
 
 <br/> 
@@ -64,36 +67,37 @@
 ## *App Manual* :
 
 ```ruby
- 1. first thing is first the splash screen well take jsut a moment.
+ 1. first thing is first the Splash-Screen well take jsut a moment.
  
- 2. second screen is welcome one which leads user to informing by his name and weight to being saved to
+ 2. second screen is Welcome one which leads user to informing by his name and weight to being saved to
    contenu consuming the app features.
  
- 3. once passing over the welcome screen and register user then will meet the tracks-list screen were has the
+ 3. once passing over the welcome screen and register user then will meet the Tracks-list screen were has the
    tracking list which the user will or have to made it later on.
 
  4. in upper of the tracks-list screen there were "SORTED" drop-down menu to select which sorted list he want to be sorted with and
     arrage his tracks list by (by: date, time, distase, etc..).
  
- 5. under below of the tracks-list screen there were circular button indicate to run one, this will lead user approach to begin
+ 5. under below of the tracks-list screen there were Circular Button indicate to run one, this will lead user approach to begin
     starting a new track operation to push-on and move arround.
  
- 6. if user pause the run! the cancel button will appears on the top of the screen where he can cancle the current run and
+ 6. if user bause the run! the Cancel button will appears on the top of the screen where he can cancle the current run and
     get-out of runnig screen without saving this tack (in canclation order, cancled track will not be saved and there no going back).
  
- 7. in order of the second icon in the bottom-bar below that indicate to chart one there will see the totals statistics of his all tracks and runns 
+ 7. in order of the second icon in the bottom-bar below that indicate to Chart one there will see the totals Statistics of his all tracks and runns 
     and also there below diagram chart to see the statistics in graph, its also show the sammary of the tracks if he just tap or press in every column in chart of the graph.
  
  8. in the last choice bottom-bar below there is the setting screen that gives user ability to modify his info like name and update
     his wight and save. 
  
- 9. finally [Notification] this app forsed BackGround work means if user begine a new track operation
+ 9. finally [Notification] this app Forsed BackGround work means if user begine a new track operation
     and he comes out from app or even try to close the app it will still working in back-ground in notification bar
     and tracking run is acually still working in notification if user swip dowen the notification he will see the timer counting runs away
     and app still working as it should be even he can pause the run or resume it
     and in taping on the notification timer the app will re-open again as well as working stable.
+    [Notification] also has controling to Puse or Continue an active running from it
  
- 10. if u need to close the app be asure there no runing track is ON-WORK in running screen 
+ 10. if u need to Exit from app, be asure there no runing track is ON-WORK in running screen 
      if there a run track is working u could cancle without saveing or finish the track to be saved then u can aproach
      to close the app definitively safely.
 ```
@@ -107,7 +111,8 @@
 
 ## *App Screen-Shots* :
 
- 1. ![1](/screen-shots/1.jpg) 2. ![2](/screen-shots/2.jpg) 3. ![3](/screen-shots/3.jpg) 4. ![4](/screen-shots/4.jpg) 5. ![5](/screen-shots/5.jpg) 6. ![6](/screen-shots/6.jpg) 7. ![7](/screen-shots/7.jpg) 8. ![8](/screen-shots/8.jpg) 9. ![9](/screen-shots/9.jpg) 10. ![10](/screen-shots/10.jpg) 11. ![11](/screen-shots/11.jpg)
+ 1. ![1](/screen-shots/1.jpg) 2. ![2](/screen-shots/2.jpg) 3. ![3](/screen-shots/3.jpg) 4. ![4](/screen-shots/4.jpg) 5. ![5](/screen-shots/5.jpg) 6. ![6](/screen-shots/6.jpg) 7. ![7](/screen-shots/7.jpg) 8. ![8](/screen-shots/8.jpg) 9. ![9](/screen-shots/9.jpg) 10. ![10](/screen-shots/10.jpg) 11. ![11](/screen-shots/11.jpg) 12. ![12](/screen-shots/12.jpg)
+ 3. ![13](/screen-shots/lunchicon.png)
  
 
  <br/>
